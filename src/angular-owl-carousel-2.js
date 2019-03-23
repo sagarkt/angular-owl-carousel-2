@@ -142,7 +142,7 @@ var angularApp = angular.module('angular-owl-carousel-2', []);
                     destroyOwl();//always attempt destruction
                 }
                 catch(e){}
-
+                options = buildProperties($scope.owlProperties);
                 if($scope.owlItems instanceof Array){
                     initOwl();//if array, try to instantiate
                 }
